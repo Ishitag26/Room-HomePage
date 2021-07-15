@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+html {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Spartan", sans-serif;
+}
+  
+li {
+    list-style: none;
+}
+  
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.container {
+    box-shadow: 9px 9px 16px -7px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 360px 420px 240px 320px 240px;
+    grid-template-areas:
+      "hero"
+      "intro"
+      "left"
+      "about"
+      "right";
+}
+  
+.header-container {
+    height: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger {
+    position: absolute;
+    height: 14px;
+    width: 20px;
+    background-image: url(/images/icon-hamburger.svg);
+    background-size: cover;
+    top: 50px;
+    left: 25px;
+    z-index: 2;
+    cursor: pointer;
+}
+.hamburger.open {
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/icon-close.svg);
+}
+  
+.logo {
+    z-index: 1;
+    height: 14px;
+    padding-bottom: 18.5px;
+}
+  
+  /******Navbar********/
+.nav-links-container {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: none;
+    animation: drop 0.6s ease;
+}
+  
+@keyframes drop {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+  
+.show {
+    display: block;
+    z-index: 1;
+}
+  
+.nav-links {
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    padding-left: 80px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+}
+  
+  /*******Top Section*************/
+.image-display {
+    background-color: black;
+    position: relative;
+    grid-area: hero;
+}
+  
+.image-container {
+    height: 100%;
+    width: 100%;
+}
+  
+#image-a,
+#image-b,
+#image-c {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+#image-a {
+    background-image: url(/images/mobile-image-hero-1.jpg);
+}
+#image-b {
+    background-image: url(/images/mobile-image-hero-2.jpg);
+    display: none;
+}
+#image-c {
+    background-image: url(/images/mobile-image-hero-3.jpg);
+    display: none;
+}
+  /*************Buttons***************/
+.buttons {
+    position: absolute;
+    display: flex;
+    height: 15%;
+    max-width: 120px;
+    min-width: 115px;
+    width: 30%;
+    bottom: 0;
+    right: 0;
+}
+.left-btn,
+.right-btn {
+    flex: 1;
+    border: 0;
+    background-color: black;
+    cursor: pointer;
+}
+.left-btn > img,
+.right-btn > img {
+    pointer-events: none;
+}
+.left-btn:hover,
+.right-btn:hover {
+    background-color: hsl(0, 0%, 27%);
+}
+  /******************************************/
+.introduction {
+    grid-area: intro;
+    padding: 70px 32px 70px 32px;
+}
+.intro-text {
+    height: 201px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 45px;
+}
+#text-a,
+#text-b,
+#text-c {
+    height: 100%;
+    width: 100%;
+}
+  
+#text-b,
+#text-c {
+    display: none;
+}
+  
+.intro-text h1 {
+    padding-bottom: 20px;
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+  
+.intro-text p {
+    font-size: 12px;
+    line-height: 1.2rem;
+    letter-spacing: -0.2px;
+    color: hsl(0, 0%, 63%);
+}
+  
+.cta-btn {
+    padding: 12px 0 12px 0;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 0.7rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+  
+.cta-btn:hover {
+    color: hsl(0, 0%, 63%);
+}
+.cta-btn:hover > img {
+    opacity: 0.5;
+}
+  
+.cta-btn img {
+    margin-left: 40px;
+}
+  
+  /**********************************/
+  
+.left-image {
+    background-image: url(/images/image-about-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: left;
+}
+.about {
+    background: white;
+    grid-area: about;
+    padding: 60px 32px 60px 32px;
+}
+  
+.about h3 {
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.about p {
+    font-size: 12px;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.2rem;
+}
+  
+.right-image {
+    background-image: url(/images/image-about-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: right;
+}
+  
+  /************Media Queries*****************/
+  
+@media screen and (min-width: 872px) {
+    .container {
+      margin: auto;
+      max-width: 1440px;
+      max-height: 800px;
+      min-height: 798px;
+      height: 100vh;
+      grid-template-columns: repeat(17, 1fr);
+      grid-template-rows: 66.67% 33.33%;
+      grid-template-areas:
+        "hero hero hero hero hero hero hero hero hero hero intro intro intro intro intro intro intro"
+        "left left left left left about about about about about about about right right right right right";
+    }
+  
+    .hamburger {
+      display: none;
+    }
+    .header-container {
+      position: absolute;
+      background: transparent;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      justify-content: flex-start;
+      padding-left: 60px;
+    }
+    .nav-links-container {
+      background: transparent;
+      position: static;
+      display: block;
+      transform: translateY(0);
+      opacity: 1;
+      z-index: 1;
+      height: 5%;
+      max-width: 45%;
+      min-width: 300px;
+      padding-left: 30px;
+      animation: none;
+    }
+    .nav-links {
+      padding-left: 0;
+      height: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 0;
+    }
+    .nav-link {
+      color: white;
+      padding: 10px;
+      position: relative;
+    }
+    .nav-link::after {
+      display: none;
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 10px;
+      width: 40%;
+      padding-top: 20px;
+      border-bottom: 2px solid white;
+    }
+    .nav-link:hover::after {
+      display: block;
+    }
+  
+    .buttons {
+      transform: translateX(100%);
+      max-width: 20%;
+    }
+  
+    #image-a {
+      background-image: url(/images/desktop-image-hero-1.jpg);
+    }
+    #image-b {
+      background-image: url(/images/desktop-image-hero-2.jpg);
+    }
+    #image-c {
+      background-image: url(/images/desktop-image-hero-3.jpg);
+    }
+  
+    .introduction {
+      padding: 15.5%;
+    }
+  
+    .intro-text {
+      height: 75%;
+      margin-bottom: 50px;
+    }
+  
+    .intro-text h1 {
+      font-size: 40px;
+      font-weight: 600;
+      padding-bottom: 25px;
+    }
+  
+    .about {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+}
+  
+@media screen and (min-width: 1180px) {
+    .intro-text {
+      margin-bottom: 10px;
+    }
+}
