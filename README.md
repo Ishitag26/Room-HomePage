@@ -8,13 +8,7 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -28,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/Ishita-gup123/Room-HomePage
 - Live Site URL: http://127.0.0.1:5501/
 
 ## My Process
