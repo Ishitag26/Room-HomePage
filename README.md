@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Ishita-gup123/Room-HomePage
-- Live Site URL: http://127.0.0.1:5501/
+- Live Site URL: http://127.0.0.1:5500/index.html
 
 ## My Process
 
