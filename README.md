@@ -6,10 +6,11 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
-
+  -[What I learned](#what-i-learned)
+  -[Continued Development](#continued-development)
+  -[Author](#author)
 ## Overview
 
 ### The challenge
@@ -34,6 +35,11 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 
-## Author
+### What I learned
+I learned how to use the html and css properties and about javascript.
 
-- Frontend Mentor - https://www.frontendmentor.io/profile/@karan-vaishnav
+### Continued development
+ Need to focus on Javascript. I will use other Frontend Challenges to get a better understanding of it.
+
+## Author
+- Frontend Mentor - @Ishita-gup123
