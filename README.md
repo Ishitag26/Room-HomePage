@@ -19,6 +19,3 @@
 ### What I learned
 I learned how to use the html and css properties and about javascript.
 
-### Continued development
- Need to focus on Javascript. I will use other Challenges to get a better understanding of it.
-
