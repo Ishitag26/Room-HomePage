@@ -1,5 +1,5 @@
 #  Room homepage
-
+  This is a solution of Front-end mentor challenge
 ### Overview
 
 ### Links
